@@ -88,7 +88,7 @@ def create_dataset(request):
     cv2.destroyAllWindows()
     
     status,cardimage = card_verify(BASE_DIR+'/ml/aadhar/user.'+str(id)+'.jpg')
-    print('xxxxxx',status)
+    
     if status==True:
         cv2.imshow('card', cardimage)
         cv2.waitKey(0)
@@ -183,7 +183,7 @@ def roi_extract(img):
 
 def card_verify(card_path):
     image = cv2.imread(card_path)
-    detector = Detector( path_config='models/research/object_detection/pre_trained_models/pipeline.config', path_ckpt='models/research/object_detection/checkpoint/saved_model/ckpt-5', path_to_labels="models/research/object_detection/label_map.pbtxt" )
+    detector = Detector( path_config='model_files/pipeline.config', path_ckpt='model_files/saved_model/ckpt-5', path_to_labels="model_files/label_map.pbtxt" )
     image, original_image, coordinate_dict,check = detector.predict(image)    
     return check,image
 
