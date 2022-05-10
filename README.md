@@ -9,6 +9,10 @@ Artificial intelligence can deliver e-KYC requirements with effective automation
 - Fraud Detection
 - ID-Card verification
 
+
+![eKYC Web App](./thumbnail.png)
+
+
 ## Features
 
 - The application uses some of the best and efficient computer vision algorithms to perform facial recognition, fraud detection and verification
