@@ -132,15 +132,15 @@ def check_overlap(curr, li):
 
 
 
-detector = Detector( path_config='model_files/pipeline.config', path_ckpt='model_files/saved_model/ckpt-5', path_to_labels="model_files/label_map.pbtxt" )
+#detector = Detector( path_config='model_files/pipeline.config', path_ckpt='model_files/saved_model/ckpt-5', path_to_labels="model_files/label_map.pbtxt" )
 
-image_path = 'model_files/sample_clean.jpg'
-image = cv2.imread(image_path)
-start = time.time()
-image, original_image, coordinate_dict,check = detector.predict(image)
-end = time.time()
-print('Card Check : ',check)
-print("Estimated time: ", end - start)
+#image_path = 'model_files/sample_clean.jpg'
+#image = cv2.imread(image_path)
+#start = time.time()
+#image, original_image, coordinate_dict,check = detector.predict(image)
+#end = time.time()
+#print('Card Check : ',check)
+#print("Estimated time: ", end - start)
 # %matplotlib inline
 #cv2.imshow('result',image[...,::-1])
 
